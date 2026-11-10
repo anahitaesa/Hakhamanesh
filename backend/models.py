@@ -107,3 +107,18 @@ class Admin(Base):
 
     # هش رمز عبور مدیر؛ رمز خام ذخیره نمی‌شود
     password_hash = Column(String(255), nullable=False)
+
+
+# مدل متادیتای سیستم و وضعیت مقداردهی اولیه دیتابیس
+class SeedMetadata(Base):
+    __tablename__ = "seed_metadata"
+
+    # کلید یکتای تنظیمات سیستم
+    key = Column(String(100), primary_key=True)
+
+    # مقدار ذخیره‌شده
+    value = Column(String(255), nullable=False)
+
+    # زمان ثبت یا به‌روزرسانی
+    created_at = Column(String(50), nullable=True)
+

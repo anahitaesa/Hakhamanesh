@@ -8,6 +8,9 @@ import { useNavigate } from 'react-router-dom'
 // وارد کردن فایل استایل صفحه ورود
 import './LoginPage.css'
 
+// وارد کردن آدرس پایه سرور
+import API_URL from './api'
+
 // کامپوننت صفحه ورود مدیر
 function LoginPage() {
 
@@ -43,7 +46,7 @@ function LoginPage() {
     try {
       // ارسال اطلاعات ورود به بک‌اند
       const response = await fetch(
-        'http://127.0.0.1:8000/auth/login',
+        `${API_URL}/auth/login`,
         {
           // مشخص کردن نوع درخواست
           method: 'POST',
