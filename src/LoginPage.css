@@ -1,0 +1,187 @@
+
+/* تنظیمات کلی صفحه ورود */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: #101111;
+  direction: rtl;
+  font-family: inherit;
+}
+
+/* کارت اصلی فرم ورود */
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 32px;
+  background: #1b1d1d;
+  border: 1px solid #333535;
+  border-radius: 18px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+}
+
+/* بخش عنوان صفحه */
+.login-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+/* عنوان هخامنش */
+.login-header h1 {
+  color: #ff9a4d;
+  font-size: 32px;
+  margin: 0 0 12px;
+}
+
+/* توضیحات زیر عنوان */
+.login-header p {
+  color: #aaa;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* فاصله‌گذاری فیلدهای فرم */
+.login-field {
+  margin-bottom: 22px;
+}
+
+/* عنوان هر ورودی */
+.login-field label {
+  display: block;
+  color: #eee;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* ظاهر اولیه ورودی نام کاربری و رمز عبور */
+.login-field input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 16px;
+  color: #fff;
+  background-color: #242828;
+  border: 1px solid #414545;
+  border-radius: 9px;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+
+  /* ایجاد تغییر رنگ نرم در حالت‌های مختلف */
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+/* تغییر پس‌زمینه فیلد هنگام قرار گرفتن نشانگر روی آن */
+.login-field input:hover {
+  background-color: #343a3a;
+  border-color: #666e6e;
+}
+
+/* ظاهر فیلد هنگام کلیک و انتخاب آن */
+.login-field input:focus {
+  background-color: #2d3232;
+  border-color: #ff9a4d;
+  box-shadow: 0 0 0 2px rgba(255, 154, 77, 0.12);
+}
+
+/* رنگ متن راهنمای داخل ورودی */
+.login-field input::placeholder {
+  color: #888;
+}
+
+/* ظرف نگهدارنده ورودی رمز عبور و دکمه چشم */
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* تنظیم فضای ورودی رمز برای جلوگیری از برخورد متن با آیکون */
+.password-wrapper input {
+  padding-left: 48px;
+}
+
+/* دکمه نمایش و مخفی کردن رمز عبور */
+.password-toggle {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* تغییر رنگ آیکون چشم هنگام هاور */
+.password-toggle:hover {
+  color: #ff9a4d;
+}
+
+/* نمایش پیام خطا */
+.login-error {
+  color: #ff7777;
+  font-size: 13px;
+  text-align: center;
+  margin: 0 0 18px;
+}
+
+/* دکمه ورود */
+.login-button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 9px;
+  background: #ff9a4d;
+  color: #171717;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+
+  /* تغییر نرم رنگ دکمه */
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+/* تغییر ظاهر دکمه هنگام هاور */
+.login-button:hover {
+  background: #ffad70;
+}
+
+/* ظاهر دکمه هنگام ارسال درخواست */
+.login-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* لینک بازگشت به صفحه اصلی */
+.login-back {
+  display: block;
+  margin-top: 24px;
+  color: #aaa;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.2s ease;
+}
+
+/* تغییر رنگ لینک هنگام هاور */
+.login-back:hover {
+  color: #ff9a4d;
+}
+
+/* تنظیمات نمایش در صفحه‌های کوچک */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 30px 22px;
+  }
+}
+
+
+
+
